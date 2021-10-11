@@ -9,6 +9,15 @@ class card:
                        '7', '8', '9', '10', 'J', 'Q', 'K'][value-1]
         self.suit = '♥♦♣♠' [suit]
     
-    def show (self):
-          
+    def show(self):
+         print('┌───────┐')
+        print(f'| {self.value:<2}    |')
+        print('|       |')
+        print(f'|   {self.suit}   |')
+        print('|       |')
+        print(f'|    {self.value:>2} |')
+        print('└───────┘')
+
+
+
 
