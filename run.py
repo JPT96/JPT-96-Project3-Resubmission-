@@ -41,7 +41,8 @@ class Deck:
         cards = []
         for i in range(iterartion):
             card = random.choice(self.cards) 
-               
+            self.cards.remove(card)
+
 
 
 
