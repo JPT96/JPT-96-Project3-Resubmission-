@@ -32,7 +32,11 @@ class Deck:
     def __init__(self):
         self.cards = []
     def full_deck(self):
-        
+        for i in range (1, 14):
+            for j in range (4):
+                self.cards.append(card(i, j))
+
+
 
 
 
