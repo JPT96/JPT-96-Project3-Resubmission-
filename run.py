@@ -45,8 +45,9 @@ class Deck:
             cards.append(card)
         return cards
 
-    def count (self):
-        
+    def count(self):
+        return len(self.cards)
+
 
 
 
