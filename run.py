@@ -37,8 +37,9 @@ class Deck:
             for j in range(4):
                 self.cards.append(card(i, j))
 
-    def draw (self, iterartion):
+    def draw(self, iterartion):
         cards = []
+        for i in range(iterartion):
 
 
 
