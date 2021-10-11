@@ -54,6 +54,7 @@ class player_dealer:
         self.cards = []
         self.dealer = dealer
         self.deck = deck
+        self.score = 0
         
 
 
