@@ -27,6 +27,9 @@ class card:
             return 11
         return self.price
 
+class Deck:
+    def __init__
+
 
 
 
