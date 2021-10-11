@@ -21,7 +21,10 @@ class card:
     
     
     def cost(self):
-        
+        if self.price >= 10:
+            return 10
+
+
 
 
 
