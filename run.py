@@ -38,6 +38,7 @@ class Deck:
                 self.cards.append(card(i, j))
 
     def draw (self, iterartion):
+        cards = []
 
 
 
