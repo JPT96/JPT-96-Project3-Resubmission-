@@ -40,6 +40,9 @@ class Deck:
     def draw(self, iterartion):
         cards = []
         for i in range(iterartion):
+            card = random.choice(self.cards) 
+               
+
 
 
 
