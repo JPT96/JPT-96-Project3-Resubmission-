@@ -52,6 +52,7 @@ class Deck:
 class player_dealer:
     def __init__(self, dealer, deck):
         self.cards = []
+        self.dealer = dealer
         
 
 
