@@ -27,9 +27,11 @@ class card:
             return 11
         return self.price
 
+
 class Deck:
     def __init__(self):
-        self.cards =[]
+        self.cards = []
+
 
 
 
