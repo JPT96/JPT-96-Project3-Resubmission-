@@ -83,7 +83,9 @@ class player_dealer:
         return self.score
     
     def show(self):
-        
+        if self.dealer:
+            
+
 
 
 
