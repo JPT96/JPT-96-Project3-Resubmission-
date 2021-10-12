@@ -62,6 +62,7 @@ class player_dealer:
             return 1
         return 0
     def deal(self):
+        self.cards.extend(self.deck.draw(2))
         
 
 
