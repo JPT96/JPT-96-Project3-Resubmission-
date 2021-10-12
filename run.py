@@ -110,6 +110,10 @@ class the_game:
             if d_status == 1:
                 print("Dealer and Player got Blackjack! It's a push. (Tie)")
             return 1
+        
+        while True :
+            bust = 0
+            
 
 
 
