@@ -137,6 +137,8 @@ class the_game:
                     self.dealer.show()
                     print("Dealer Bust. I guess he wasn't cheating after all. You win!")
                     return 1
+                self.dealer.show()
+                
                     
 
         
