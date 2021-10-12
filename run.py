@@ -113,7 +113,9 @@ class the_game:
         
         while True :
             bust = 0
+            command = input("Hit or Hold?:\n")
             
+
 
 
 
