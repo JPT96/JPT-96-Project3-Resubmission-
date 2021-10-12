@@ -70,7 +70,10 @@ class player_dealer:
         return 0
 
     def score_checker(self):
+        ace_counter = 0 
+        self.score = 0
         
+
 
         
 
