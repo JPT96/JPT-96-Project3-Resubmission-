@@ -135,6 +135,8 @@ class the_game:
             while self.dealer.score_checker() < 17:
                 if self.dealer.hit() == 1:
                     self.dealer.show()
+                    print("Dealer Bust. I guess he wasn't cheating after all. You win!")
+                    return 1
                     
 
         
