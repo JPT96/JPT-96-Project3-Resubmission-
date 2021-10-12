@@ -119,6 +119,9 @@ class the_game:
                 self.player.show()
             elif command == "Hold":
                 break
+            else:
+                print("Please enter Hit or Hold starting with a capital letter")
+                continue
 
 
 
