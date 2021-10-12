@@ -105,6 +105,8 @@ class the_game:
         d_status = self.dealer.deal()
         
         self.player.show()
+        if p_status == 1:
+            print("Player got Blackjack! Congrats!")
 
 
 
