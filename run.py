@@ -77,8 +77,11 @@ class player_dealer:
                 ace_counter += 1
             self.score += card.cost()
         
-        while ace_counter != 0 and self.score > 21 :
-            
+        while ace_counter != 0 and self.score > 21:
+            ace_counter -= 1
+            self.score -= 10
+        return self.score
+
 
 
 
