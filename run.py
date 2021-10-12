@@ -84,7 +84,10 @@ class player_dealer:
     
     def show(self):
         if self.dealer:
-            
+            print ("Dealers Cards")
+        else:
+            print ("Players Cards")
+
 
 
 
