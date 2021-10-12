@@ -99,7 +99,10 @@ class the_game:
         self.deck.full_deck()
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
+    
+    def round(self):
         
+
 
 
 
