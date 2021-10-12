@@ -97,6 +97,9 @@ class the_game:
     def __init__(self):
         self.deck = Deck()
         self.deck.full_deck()
+        self.player = player_dealer(False, self.deck)
+        self.dealer = player_dealer(True, self.deck)
+        
 
 
 
