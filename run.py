@@ -116,6 +116,7 @@ class the_game:
             command = input("Hit or Hold?:\n")
             if command == "Hit":
                 bust = self.player.hit()
+                self.player.show()
 
 
 
