@@ -81,6 +81,10 @@ class player_dealer:
             ace_counter -= 1
             self.score -= 10
         return self.score
+    
+    def show(self):
+        
+
 
 
 
