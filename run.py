@@ -122,6 +122,9 @@ class the_game:
             else:
                 print("Please enter Hit or Hold starting with a capital letter")
                 continue
+            if bust == 1:
+                print("Player Busted, You're flat Broke!")
+                 
 
 
 
