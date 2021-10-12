@@ -133,6 +133,9 @@ class the_game:
                 return 1
             
             while self.dealer.score_checker() < 17:
+                if self.dealer.hit() == 1:
+                    self.dealer.show()
+                    
 
         
             
