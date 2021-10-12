@@ -111,12 +111,14 @@ class the_game:
                 print("Dealer and Player got Blackjack! It's a push. (Tie)")
             return 1
         
-        while True :
+        while True:
             bust = 0
             command = input("Hit or Hold?:\n")
             if command == "Hit":
                 bust = self.player.hit()
                 self.player.show()
+            elif command == "Hold":
+                break
 
 
 
