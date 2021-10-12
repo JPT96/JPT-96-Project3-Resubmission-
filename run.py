@@ -74,6 +74,12 @@ class player_dealer:
         self.score = 0
         for card in self.cards:
             if card.cost() == 11:
+                ace_counter += 1
+            self.score += card.cost()
+        
+        while ace_counter != 0 and self.score > 21 :
+            
+
 
 
 
