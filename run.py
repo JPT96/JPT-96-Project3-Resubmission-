@@ -114,7 +114,9 @@ class the_game:
         while True :
             bust = 0
             command = input("Hit or Hold?:\n")
-            
+            if command == "Hit":
+                bust = self.player.hit()
+
 
 
 
