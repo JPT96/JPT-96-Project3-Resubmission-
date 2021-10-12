@@ -19,7 +19,6 @@ class card:
         print(f'|    {self.value:>2} |')
         print('└───────┘')
     
-    
     def cost(self):
         if self.price >= 10:
             return 10
@@ -59,9 +58,13 @@ class player_dealer:
     def hit(self):
         self.cards.extend(self.deck.draw(1))
         self.score_checker()
-        if self.score ==21:
+        if self.score == 21:
             return 1
         return 0
+    def deal(self):
+        
+
+
 
 
 
