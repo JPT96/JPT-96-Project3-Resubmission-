@@ -55,6 +55,11 @@ class player_dealer:
         self.dealer = dealer
         self.deck = deck
         self.score = 0
+    
+    def hit(self):
+        
+
+
         
 
 
