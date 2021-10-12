@@ -103,6 +103,8 @@ class the_game:
     def round(self):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
+        
+        self.player.show()
 
 
 
