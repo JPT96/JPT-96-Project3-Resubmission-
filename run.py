@@ -127,6 +127,8 @@ class the_game:
                 return 1
 
             print("\n")
+            self.dealer.show()
+        
             
 
 
