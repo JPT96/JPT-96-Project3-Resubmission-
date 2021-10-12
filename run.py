@@ -101,7 +101,8 @@ class the_game:
         self.dealer = player_dealer(True, self.deck)
     
     def round(self):
-        
+        p_status = self.player.deal()
+
 
 
 
