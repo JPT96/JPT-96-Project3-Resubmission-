@@ -72,7 +72,8 @@ class player_dealer:
     def score_checker(self):
         ace_counter = 0 
         self.score = 0
-        
+        for card in self.cards:
+
 
 
         
