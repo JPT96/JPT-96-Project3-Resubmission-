@@ -107,6 +107,10 @@ class the_game:
         self.player.show()
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
+            if d_status == 1:
+                print("Dealer and Player got Blackjack! It's a push. (Tie)")
+            return 1
+
 
 
 
