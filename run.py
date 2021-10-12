@@ -59,7 +59,10 @@ class player_dealer:
     def hit(self):
         self.cards.extend(self.deck.draw(1))
         self.score_checker()
-        
+        if self.score ==21:
+            return 1
+        return 0
+
 
 
 
