@@ -126,6 +126,9 @@ class the_game:
                 print("Player Busted, You're flat Broke!")
                 return 1
 
+            print("\n")
+            
+
 
 
 
