@@ -124,7 +124,8 @@ class the_game:
                 continue
             if bust == 1:
                 print("Player Busted, You're flat Broke!")
-                 
+                return 1
+
 
 
 
