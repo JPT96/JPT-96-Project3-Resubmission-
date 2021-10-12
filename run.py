@@ -90,6 +90,8 @@ class player_dealer:
         
         for i in self.cards:
             i.show()
+
+        print("Score: " + str(self.score))
     
 
 
