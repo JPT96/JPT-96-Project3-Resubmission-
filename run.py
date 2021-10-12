@@ -57,7 +57,9 @@ class player_dealer:
         self.score = 0
     
     def hit(self):
-        
+        self.cards.extend(self.deck.draw(1))
+
+
 
 
         
