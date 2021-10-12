@@ -105,6 +105,7 @@ class the_game:
         d_status = self.dealer.deal()
         
         self.player.show()
+
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
             if d_status == 1:
@@ -138,7 +139,17 @@ class the_game:
                     print("Dealer Bust. I guess he wasn't cheating after all. You win!")
                     return 1
                 self.dealer.show()
-                
+
+            if self.dealer.score_checker() == self.player.score_checker():
+                print("It's a tie, Dealer wins by default") 
+            elif self.dealer.score_checker() > self.player.score_checker():
+                print("dealer wins. Is it rigged?")
+            elif self.dealer.score_checker() < self.player.score_checker():
+                print("You did it You won! Take your win and run")
+
+
+
+
                     
 
         
