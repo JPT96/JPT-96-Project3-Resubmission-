@@ -149,6 +149,11 @@ class the_game:
 
 
 
+b = the_game()
+b.round()
+
+
+
 
                     
 
