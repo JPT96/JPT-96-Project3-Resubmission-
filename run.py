@@ -63,6 +63,7 @@ class player_dealer:
         return 0
     def deal(self):
         self.cards.extend(self.deck.draw(2))
+        self.score_checker()
         if self.score == 21:
             return 1
         return 0
