@@ -58,6 +58,8 @@ class player_dealer:
     
     def hit(self):
         self.cards.extend(self.deck.draw(1))
+        self.score_checker()
+        
 
 
 
