@@ -127,25 +127,25 @@ class the_game:
                 print("Player Busted, You're flat Broke!")
                 return 1
 
-            print("\n")
-            self.dealer.show()
-            if d_status == 1:
-                print("The Dealer got BlackJack. Is he cheating?")
-                return 1
+        print("\n")
+        self.dealer.show()
+        if d_status == 1:
+            print("The Dealer got BlackJack. Is he cheating?")
+            return 1
             
-            while self.dealer.score_checker() < 17:
-                if self.dealer.hit() == 1:
-                    self.dealer.show()
-                    print("Dealer Bust. I guess he wasn't cheating after all. You win!")
-                    return 1
+        while self.dealer.score_checker() < 17:
+            if self.dealer.hit() == 1:
                 self.dealer.show()
+                print("Dealer Bust. I guess he wasn't cheating after all. You win!")
+                return 1
+            self.dealer.show()
 
-            if self.dealer.score_checker() == self.player.score_checker():
-                print("It's a tie, Dealer wins by default") 
-            elif self.dealer.score_checker() > self.player.score_checker():
-                print("dealer wins. Is it rigged?")
-            elif self.dealer.score_checker() < self.player.score_checker():
-                print("You did it You won! Take your win and run")
+        if self.dealer.score_checker() == self.player.score_checker():
+            print("It's a tie, Dealer wins by default") 
+        elif self.dealer.score_checker() > self.player.score_checker():
+            print("dealer wins. Is it rigged?")
+        elif self.dealer.score_checker() < self.player.score_checker():
+            print("You did it You won! Take your win and run")
 
 
 
