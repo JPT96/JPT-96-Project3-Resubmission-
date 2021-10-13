@@ -1,4 +1,4 @@
-# JPT-96-MSProject3(Black Jack)
+# JPT-96-MSProject3(Black Jack)-Resubmission
 
 ## About
 For my Python project I decided to go with a very simple version of black Jack game.
