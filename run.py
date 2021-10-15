@@ -104,10 +104,11 @@ class the_game:
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         
-        self.player.show()
         player_chips = Chips()
         take_bet(player_chips)
 
+        self.player.show()
+        
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
             if d_status == 1:
