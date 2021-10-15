@@ -148,7 +148,9 @@ class the_game:
             print("You did it You won! Take your win and run")
 
 class Chips:
+    def __init__(self, total= 100)
     
+
 
 b = the_game()
 b.round()
