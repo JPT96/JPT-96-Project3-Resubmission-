@@ -149,9 +149,7 @@ class the_game:
             print("dealer wins. Is it rigged?")
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
-
-            
-print('\n Your total chips are: {}'.format(player_chips.total))
+        print('\n Your total chips are: {}'.format(chips.total))
 
 
 class Chips:
