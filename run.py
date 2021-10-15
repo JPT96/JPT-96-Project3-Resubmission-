@@ -111,8 +111,10 @@ class the_game:
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
+            print('\n Your total chips are: {}'.format(player_chips.total))
             if d_status == 1:
                 print("Dealer and Player got Blackjack! It's a push. (Tie)")
+                print('\n Your total chips are: {}'.format(player_chips.total))
             return 1
         
         while True:
