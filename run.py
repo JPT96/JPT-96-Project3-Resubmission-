@@ -99,12 +99,14 @@ class the_game:
         self.deck.full_deck()
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
-    
+        
     def round(self):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         
         self.player.show()
+        player_chips = Chips()
+        take_bet(player_chips)
 
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
