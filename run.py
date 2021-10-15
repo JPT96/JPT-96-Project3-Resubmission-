@@ -148,8 +148,10 @@ class the_game:
             print("You did it You won! Take your win and run")
 
 class Chips:
-    def __init__(self, total= 100):
+    def __init__(self, total=100):
         self.total = total
+        self.bet = 0
+        
 
 
 
