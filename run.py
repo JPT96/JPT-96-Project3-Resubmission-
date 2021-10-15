@@ -157,7 +157,8 @@ class Chips:
     
     def loss_bet(self):
         self.total -= self.bet
-    
+
+
 def take_bet(chips):
     while True:
         try:
@@ -165,15 +166,10 @@ def take_bet(chips):
         except:
             print("Please input a number")
         else:
+            if chips.bet > chips.total:
+
+                print("You don't have enough for that you have: {}".format(chips.total))
             
-
-
-
-     
-
-
-
-
 
 b = the_game()
 b.round()
