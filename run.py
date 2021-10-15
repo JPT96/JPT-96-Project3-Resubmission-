@@ -157,6 +157,16 @@ class Chips:
     
     def loss_bet(self):
         self.total -= self.bet
+    
+    def take_bet(chips):
+        while True:
+            try:
+                chips.bet = int(input("How many chips do you want to gamble? :"))
+
+
+
+     
+
 
 
 
