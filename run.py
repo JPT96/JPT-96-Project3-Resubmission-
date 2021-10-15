@@ -49,7 +49,7 @@ class Deck:
 
     
 class player_dealer:
-    def __init__(self, dealer, deck):
+    def __init__(self, dealer, deck,):
         self.cards = []
         self.dealer = dealer
         self.deck = deck
@@ -100,7 +100,7 @@ class the_game:
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
         
-    def round(self):
+    def round(self,chips):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
@@ -111,7 +111,7 @@ class the_game:
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
-            print('\n Your total chips are: {}'.format(player_chips.total))
+            chips.win_bet()
             if d_status == 1:
                 print("Dealer and Player got Blackjack! It's a push. (Tie)")
                 print('\n Your total chips are: {}'.format(player_chips.total))
@@ -130,7 +130,7 @@ class the_game:
                 continue
             if bust == 1:
                 print("Player Busted, You're flat Broke!")
-                print('\n Your total chips are: {}'.format(player_chips.total))
+                chips.loss_bet()
                 return 1
 
         print("\n")
