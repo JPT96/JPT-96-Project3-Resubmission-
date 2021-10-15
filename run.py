@@ -147,6 +147,7 @@ class the_game:
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
 
+
 class Chips:
     def __init__(self, total=100):
         self.total = total
@@ -163,12 +164,14 @@ def take_bet(chips):
     while True:
         try:
             chips.bet = int(input("How many chips do you want to gamble? :"))
-        except:
+        except ValueError:
             print("Please input a number")
         else:
             if chips.bet > chips.total:
 
                 print("You don't have enough for that you have: {}".format(chips.total))
+            else:
+                break
             
 
 b = the_game()
