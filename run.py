@@ -100,13 +100,13 @@ class the_game:
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
         
-    def round(self, chips):
+    def round(self):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
         player_chips = Chips()
         take_bet(player_chips)
-
+        chips = Chips()
         self.player.show()
         
         if p_status == 1:
