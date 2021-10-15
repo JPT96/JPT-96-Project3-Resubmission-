@@ -100,7 +100,7 @@ class the_game:
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
         
-    def round(self,chips):
+    def round(self, chips):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
@@ -150,13 +150,13 @@ class the_game:
 
         if self.dealer.score_checker() == self.player.score_checker():
             print("It's a tie, Dealer wins by default") 
-            print('\n Your total chips are: {}'.format(player_chips.total))
+            chips.loss_bet()
         elif self.dealer.score_checker() > self.player.score_checker():
             print("dealer wins. Is it rigged?")
-            print('\n Your total chips are: {}'.format(player_chips.total))
+            chips.loss_bet()
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
-            print('\n Your total chips are: {}'.format(player_chips.total))
+            chips.win_bet()
 
 
 class Chips:
