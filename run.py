@@ -103,7 +103,7 @@ class the_game:
     def round(self):
         p_status = self.player.deal()
         d_status = self.dealer.deal()
-        
+        print("Welcome to Black Jack")
         player_chips = Chips()
         take_bet(player_chips)
 
