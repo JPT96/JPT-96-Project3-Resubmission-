@@ -106,7 +106,7 @@ class the_game:
         print("Welcome to Black Jack")
         player_chips = Chips()
         take_bet(player_chips)
-        chips = Chips()
+        chips = 0
         self.player.show()
         
         if p_status == 1:
