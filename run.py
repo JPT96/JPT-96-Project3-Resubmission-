@@ -106,12 +106,11 @@ class the_game:
         print("Welcome to Black Jack")
         player_chips = Chips()
         take_bet(player_chips)
-        chips = 0
         self.player.show()
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
-            chips.win_bet()
+            player_chips.win_bet()
             if d_status == 1:
                 print("Dealer and Player got Blackjack! It's a push. (Tie)")
                 print('\n Your total chips are: {}'.format(player_chips.total))
@@ -130,13 +129,15 @@ class the_game:
                 continue
             if bust == 1:
                 print("Player Busted, You're flat Broke!")
-                chips.loss_bet()
+                player_chips.loss_bet()
+                print('\n Your total chips are: {}'.format(player_chips.total))
                 return 1
 
         print("\n")
         self.dealer.show()
         if d_status == 1:
             print("The Dealer got BlackJack. Is he cheating?")
+            player_chips.loss_bet()
             print('\n Your total chips are: {}'.format(player_chips.total))
             return 1
             
@@ -144,19 +145,20 @@ class the_game:
             if self.dealer.hit() == 1:
                 self.dealer.show()
                 print("Dealer Bust. I guess he wasn't cheating after all. You win!")
+                player_chips.win_bet()
                 print('\n Your total chips are: {}'.format(player_chips.total))
                 return 1
             self.dealer.show()
 
         if self.dealer.score_checker() == self.player.score_checker():
             print("It's a tie, Dealer wins by default") 
-            chips.loss_bet()
+            player_chips.loss_bet()
         elif self.dealer.score_checker() > self.player.score_checker():
             print("dealer wins. Is it rigged?")
-            chips.loss_bet()
+            player_chips.loss_bet()
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
-            chips.win_bet()
+            player_chips.win_bet()
 
 
 class Chips:
