@@ -190,6 +190,9 @@ def take_bet(chips):
                 break
 
 
+b = the_game()
+b.round()
+
 new_game = input("Would you like to play another hand? y/n: ")
 if new_game[0].lower() == 'y':
     new_game = the_game()
@@ -199,8 +202,7 @@ else:
     print("Thank you for playing don't be a stranger now.")
     
 
-b = the_game()
-b.round()
+
 
 
 
