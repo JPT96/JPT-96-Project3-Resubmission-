@@ -102,6 +102,8 @@ class the_game:
         self.round_count = 0
         
     def round(self):
+        self.player.score = 0
+        self.dealer.score = 0
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
@@ -109,7 +111,7 @@ class the_game:
         self.round_count += 1
         take_bet(player_chips)
         self.player.show()
-        self.player.score = 0
+        
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
