@@ -158,6 +158,7 @@ class the_game:
         elif self.dealer.score_checker() > self.player.score_checker():
             print("dealer wins. Is it rigged?")
             player_chips.loss_bet()
+            print('\n Your total chips are: {}'.format(player_chips.total))
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
             player_chips.win_bet()
