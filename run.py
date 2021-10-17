@@ -161,6 +161,7 @@ class the_game:
         elif self.dealer.score_checker() < self.player.score_checker():
             print("You did it You won! Take your win and run")
             player_chips.win_bet()
+            print('\n Your total chips are: {}'.format(player_chips.total))
 
 
 class Chips:
@@ -187,7 +188,16 @@ def take_bet(chips):
                 print("You don't have enough for that you have: {}".format(chips.total))
             else:
                 break
-            
+
+
+new_game = input("Would you like to play another hand? y/n: ")
+if new_game[0].lower() == 'y':
+    new_game = the_game()
+    new_game.round()
+    continue
+else:
+    print("Thank you for playing don't be a stranger now.")
+    break
 
 b = the_game()
 b.round()
