@@ -99,7 +99,7 @@ class the_game:
         self.deck.full_deck()
         self.player = player_dealer(False, self.deck)
         self.dealer = player_dealer(True, self.deck)
-        round_count = 0
+        self.round_count = 0
         
     def round(self):
         p_status = self.player.deal()
