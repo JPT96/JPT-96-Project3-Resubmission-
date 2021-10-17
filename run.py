@@ -105,9 +105,11 @@ class the_game:
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
-        player_chips = Chips()
+        # player_chips = Chips()
+        self.round_count += 1
         take_bet(player_chips)
         self.player.show()
+        self.player.score = 0
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
@@ -193,12 +195,14 @@ def take_bet(chips):
 
 
 b = the_game()
+if b.round_count == 0:
+    player_chips = Chips()
 b.round()
 
 new_game = input("Would you like to play another hand? y/n: ")
 if new_game[0].lower() == 'y':
-    new_game = the_game()
-    new_game.round()
+    # new_game = the_game()
+    b.round()
     
 else:
     print("Thank you for playing don't be a stranger now.")
