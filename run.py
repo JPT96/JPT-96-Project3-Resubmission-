@@ -92,6 +92,10 @@ class player_dealer:
             i.show()
         print("Score: " + str(self.score))
 
+    def score_reset(self):
+        self.score = 0
+
+
 
 class the_game:
     def __init__(self):
@@ -102,12 +106,12 @@ class the_game:
         self.round_count = 0
         
     def round(self):
-        self.player.score = 0
-        self.dealer.score = 0
+        self.player.score_reset()
+        self.dealer.score_reset()
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
-        # player_chips = Chips()
+        
         self.round_count += 1
         take_bet(player_chips)
         self.player.show()
@@ -203,7 +207,7 @@ b.round()
 
 new_game = input("Would you like to play another hand? y/n: ")
 if new_game[0].lower() == 'y':
-    # new_game = the_game()
+    
     b.round()
     
 else:
