@@ -80,7 +80,9 @@ class player_dealer:
         while ace_counter != 0 and self.score > 21:
             ace_counter -= 1
             self.score -= 10
+            print(card)
         return self.score
+        print(card)
     
     def show(self):
         if self.dealer:
@@ -92,9 +94,8 @@ class player_dealer:
             i.show()
         print("Score: " + str(self.score))
 
-    def score_reset(self):
-        self.score = 0
-
+    
+       
 
 
 class the_game:
@@ -106,8 +107,6 @@ class the_game:
         self.round_count = 0
         
     def round(self):
-        self.player.score_reset()
-        self.dealer.score_reset()
         p_status = self.player.deal()
         d_status = self.dealer.deal()
         print("Welcome to Black Jack")
@@ -201,17 +200,14 @@ def take_bet(chips):
 
 
 b = the_game()
-if b.round_count == 0:
-    player_chips = Chips()
+
+player_chips = Chips()
 b.round()
 
-new_game = input("Would you like to play another hand? y/n: ")
-if new_game[0].lower() == 'y':
+
     
-    b.round()
-    
-else:
-    print("Thank you for playing don't be a stranger now.")
+
+print("Thank you for playing don't be a stranger now.")
     
 
 
