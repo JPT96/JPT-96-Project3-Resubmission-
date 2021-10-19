@@ -80,9 +80,9 @@ class player_dealer:
         while ace_counter != 0 and self.score > 21:
             ace_counter -= 1
             self.score -= 10
-            print(card)
+           
         return self.score
-        print(card)
+        
     
     def show(self):
         if self.dealer:
