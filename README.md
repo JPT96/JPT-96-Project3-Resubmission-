@@ -207,12 +207,21 @@ All though successful in this portion of the project update I was unable to stop
 I needed to impliment a soft reset on the score tracker but in doing so reset the chips counter back to 100.
 So what happened is the score would climb but the game logic would still work, but the score wouldn't  reset.
 There is no fix for this as of yet.
-
-<summary>Click here to view the icard accumilation bug</summary>
+<details>
+<summary>Click here to view the card accumilation bug</summary>
 
 ![Screenshot of card accumilation bug](images/cardaccabug.png)
 
 </details>
+
+Another bug is that you can use 0 as it is technically a number. There is no current fix for this bug.
+<details>
+<summary>Click here to view the 0 chips bugs</summary>
+
+![Screenshot of 0 chips still play](images/0chipsbug.png)
+
+</details>
+
 
 
 ## Deployment 
