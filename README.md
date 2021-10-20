@@ -67,6 +67,25 @@ This is Home/loading screen. It has a simple welcome message and a prompt to ent
 </details>
 This shows that a input has been made for the amount of chips the user is betting.
 
+### 3. Hit or Hold
+<details>
+    <summary>Click here to view the home screen</summary>
+
+![Screenshot of taking bet](images/hit.png)
+
+</details>
+This shows another card is printed when Hit is inputed into the console.
+
+### 4. End Game result
+
+<details>
+    <summary>Click here to view the home screen</summary>
+
+![Screenshot of taking bet](images/endgame.png)
+
+</details>
+
+This shows the end result of a turn.
 
 
 
