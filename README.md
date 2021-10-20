@@ -143,6 +143,9 @@ within the __init__ the main value is defined at 100 so that the player always s
 This is then defined in the take_bet function. But other than that it simply adds the bet to the player chips or removes the player chips.
 
 ### Take_bet
+In this function it takes a while true statement, with the following. Try chips.bet and give it a input. If it is over the alloted amount of chips
+it will print a message saying you dont have enough chips for that. Or if you don't input a interger it will take a expect value error and ask you for a number.
+
 
 
 ## Future Features
