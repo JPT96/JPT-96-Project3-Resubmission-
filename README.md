@@ -15,16 +15,16 @@ For my Python project I decided to go with a very simple version of black Jack g
 3. [Features](#features)
 4. [Structure](#structure)
     1. [Home Screen](#home-screen)
-    2. [place bet](#place-bet)
+    2. [Place Bet](#place-bet)
     3. [Hit or Hold](#hit-hold)
-    4. [end game result](#end-game-result)
+    4. [End Game Result](#end-game-result)
 5. [Design](#design)
 6. [Function Purposes](#function-purposes)
-7. [user stories](#user-stories)
-8. [technologies Used](#technologies-used)
-9. [testing](#testing)
-10. [future features](#future-features)
-11. [deployment](#depolyment)
+7. [User Stories](#user-stories)
+8. [Technologies Used](#technologies-used)
+9. [Testing](#testing)
+10. [Future Features](#future-features)
+11. [Deployment](#depolyment)
 
 
 ## Project Goals
@@ -157,7 +157,7 @@ I would like to do a couple of turns in this project  that would allow the playe
 ### User story 1
 I would like to be able to input my bet easily and be reminded if I am over my chips.
 <details>
-    <summary>Click here to view the Chip reminder/summary>
+    <summary>Click here to view the Chip reminder</summary>
 
 ![Screenshot of chip reminder](images/chipserrorhandle.png)
 
@@ -172,10 +172,20 @@ And I like that there is a fail safe that it will only take numbers so nothing b
 
 </details>
 
+### User story 2
+
+I just want a easy to follow game with minimal instructions. Which has been achieved with this game.
+<details>
+    <summary>Click here to view the full game </summary>
+
+![Screenshot of a full game ](images/endgame.png)
+
+</details>
 
 
 
 ## Technologies used
+
 ### Languages used
 [python3](https://en.wikipedia.org/wiki/Python_(programming_language) This was only a python3 project.
 
