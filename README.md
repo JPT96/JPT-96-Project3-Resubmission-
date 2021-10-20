@@ -97,10 +97,10 @@ The design of the cards is used with print statements using | and - to for the b
 In this sub section I would like to go over my functions and give a breif run down of what they do and the objective that they achieve.
 This will show my thought process and even help others that wish to do a similar project.
 ## Import
-So first thing you need to do is import random. This is very important (get it) because you need the deck to be shuffled and distributed randomly this allows for a fair game.
+So first thing you need to do is import random. This is very important because you need the deck to be shuffled and distributed randomly this allows for a fair game.
 ## Functions & Classes
 ### card
-This first function is called card. (no prizes for guessing what this class is for)
+This first function is called card.
 This is essentially comprised of a list with the values of the cards which get reassinged in the print statements. In order to create the cards
 underneath this we give the __init__ within  this class, we then assign self to all neccessary variables. 
 After this we then define the value of the cards with things like >= 10 for example.
