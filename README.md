@@ -60,7 +60,7 @@ This is Home/loading screen. It has a simple welcome message and a prompt to ent
 
 ### 2. Place Bet
 <details>
-    <summary>Click here to view the home screen</summary>
+    <summary>Click here to view the gambling portion</summary>
 
 ![Screenshot of taking bet](images/gamble.png)
 
@@ -69,7 +69,7 @@ This shows that a input has been made for the amount of chips the user is bettin
 
 ### 3. Hit or Hold
 <details>
-    <summary>Click here to view the home screen</summary>
+    <summary>Click here to view the hit/hold</summary>
 
 ![Screenshot of taking bet](images/hit.png)
 
@@ -150,6 +150,29 @@ it will print a message saying you dont have enough chips for that. Or if you do
 
 ## Future Features
 I would like to do a couple of turns in this project  that would allow the player to get a couple of rounds in and fully enjoy this project.
+
+
+## User Stories
+
+### User story 1
+I would like to be able to input my bet easily and be reminded if I am over my chips.
+<details>
+    <summary>Click here to view the Chip reminder/summary>
+
+![Screenshot of chip reminder](images/chipserrorhandle.png)
+
+</details>
+
+This shows the user that they have asked for too many chips and given a reminder of the maximum they can use and asks them again how much they would like the gamble.
+And I like that there is a fail safe that it will only take numbers so nothing bad or strange can happen.
+<details>
+    <summary>Click here to view the input Number prompt</summary>
+
+![Screenshot of number reminder](images/inputnumber.png)
+
+</details>
+
+
 
 
 ## Technologies used
