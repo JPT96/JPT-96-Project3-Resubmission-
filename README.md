@@ -190,16 +190,17 @@ I just want a easy to follow game with minimal instructions. Which has been achi
 [python3](https://www.python.org/) This was only a python3 project.
 
 ### apps and platforms
-[Heroku](https://www.heroku.com) this is used to deploy the app for free
-[Gitpod](https://gitpod.com/) this is where all the code was written
-[Github](https://github.com/) This is where all of my project repos exist and are hosted.
-[Git](https://git-scm.com/)  This is a control system that allows me to push commits and changes to github/gitpod
+- [Heroku](https://www.heroku.com) this is used to deploy the app for free
+- [Gitpod](https://gitpod.com/) this is where all the code was written
+- [Github](https://github.com/) This is where all of my project repos exist and are hosted.
+- [Git](https://git-scm.com/)  This is a control system that allows me to push commits and changes to github/gitpod
  
 ## Testing
 - The majority of the testing is done through the terminal in VS code and gitpod.
 - My naming convetions could of been cleaner there are some basic issues like naming functions very similarly for example price and cost are too similiar.
 - this caused the project to not work for a day or two because I couldn't understand the errors that were occuring.
 - Originally there was almost no error testing in this project which has now been fixed.
+- Testing the stories with easy goals it's clear to see that these acted as intended
 
 ### Bugs
 I did try and create a way of playing a new round. To make the chips more useable. So that they would carry over in between rounds.
@@ -207,12 +208,21 @@ All though successful in this portion of the project update I was unable to stop
 I needed to impliment a soft reset on the score tracker but in doing so reset the chips counter back to 100.
 So what happened is the score would climb but the game logic would still work, but the score wouldn't  reset.
 There is no fix for this as of yet.
-
-<summary>Click here to view the icard accumilation bug</summary>
+<details>
+<summary>Click here to view the card accumilation bug</summary>
 
 ![Screenshot of card accumilation bug](images/cardaccabug.png)
 
 </details>
+
+Another bug is that you can use 0 as it is technically a number. There is no current fix for this bug.
+<details>
+<summary>Click here to view the 0 chips bugs</summary>
+
+![Screenshot of 0 chips still play](images/0chipsbug.png)
+
+</details>
+
 
 
 ## Deployment 
@@ -239,4 +249,10 @@ This application has been deployed from Github using Heroku:
 8. Enter your repository name and click on it when it shows below
 9. Choose the branch you want to buid your app from
 10.click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+    
+    
+### acknowledgements
+    - This project is based on a Code Institute template (https://github.com/Code-Institute-Org/python-essentials-template)
+    - This project was done without the guidance of a mentor due to lack of availability and it's due date.
+    
  
