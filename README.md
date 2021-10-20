@@ -58,6 +58,16 @@ The structure of this BlackJack game relys on user inputs in order to work.
 </details>
 This is Home/loading screen. It has a simple welcome message and a prompt to enter a gambling bet.
 
+### 2. Place Bet
+<details>
+    <summary>Click here to view the home screen</summary>
+
+![Screenshot of taking bet](images/gamble.png)
+
+</details>
+This shows that a input has been made for the amount of chips the user is betting.
+
+
 
 
 
