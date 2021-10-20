@@ -252,5 +252,7 @@ This application has been deployed from Github using Heroku:
     
     
 ### acknowledgements
-    This project is based on a Code Institute 
+    - This project is based on a Code Institute template (https://github.com/Code-Institute-Org/python-essentials-template)
+    - This project was done without the guidance of a mentor due to lack of availability and it's due date.
+    
  
