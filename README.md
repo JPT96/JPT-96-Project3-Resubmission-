@@ -28,13 +28,17 @@ For my Python project I decided to go with a very simple version of black Jack g
 
 
 ## Project Goals
-The goal of this project is to create a BlackJack game that is easy to use.
-to take a gamble input
-to have readable cards
-a easy to follow score system
+my project goals are:
+- create a BlackJack game that is easy to use.
+- to take a gamble input
+- to have readable cards
+- a easy to follow score system
 
 
 ## User Goals
+my user goals are:
+- easy instructions if player doesn't follow the steps
+- to have a basic understanding of Python
 
 
 ## Features
@@ -43,6 +47,18 @@ It has some fun print statements in it to give the player something more interes
 It also now has a error message if hit or hold isn't entered to remind the user of what is required with a reminder that capitalisation is also required.
 
 ## Structure
+The structure of this BlackJack game relys on user inputs in order to work.
+
+### 1. Home Screen
+<details>
+    <summary>Click here to view the home screen</summary>
+
+![Screenshot of Home screen](images/loadingscreen.png)
+
+</details>
+This is Home/loading screen. It has a simple welcome message and a prompt to enter a gambling bet.
+
+
 
 
 ## Design
