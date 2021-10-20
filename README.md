@@ -200,6 +200,7 @@ I just want a easy to follow game with minimal instructions. Which has been achi
 - My naming convetions could of been cleaner there are some basic issues like naming functions very similarly for example price and cost are too similiar.
 - this caused the project to not work for a day or two because I couldn't understand the errors that were occuring.
 - Originally there was almost no error testing in this project which has now been fixed.
+- Testing the stories with easy goals it's clear to see that these acted as intended
 
 ### Bugs
 I did try and create a way of playing a new round. To make the chips more useable. So that they would carry over in between rounds.
