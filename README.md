@@ -3,15 +3,43 @@
 ## About
 For my Python project I decided to go with a very simple version of black Jack game.
 
+![loadingscreen](images/loadingscreen.png)
 
-WHEN PLAYING PLEASE USE CAPITALISATION ON THE FIRST LETTER TO MAKE IT WORK FOR EXAMPLE Hit or Hold NOT hit and hold
+[click here](https://jpt-96-blackjack-resubmission.herokuapp.com/) to see deployed game.
 
+## Contents
+
+
+1. [Project Goals](#project-goals)
+2. [User Goals](#user-goals)
+3. [Features](#features)
+4. [Structure](#structure)
+    1. [Home Screen](#home-screen)
+    2. [place bet](#place-bet)
+    3. [Hit or Hold](#hit-hold)
+    4. [end game result](#end-game-result)
+5. [Design](#design)
+6. [Function Purposes](#function-purposes)
+7. [user stories](#user-stories)
+8. [technologies Used](#technologies-used)
+9. [testing](#testing)
+10. [future features](#future-features)
+11. [deployment](#depolyment)
+
+
+## Project Goals
+
+
+## User Goals
 
 
 ## Features
 This game has cards and a simple hit or hold function and will keep going till you hit 21.
 It has some fun print statements in it to give the player something more interesting to look at rather than just "Dealer wins" or "Player wins".
 It also now has a error message if hit or hold isn't entered to remind the user of what is required with a reminder that capitalisation is also required.
+
+## Structure
+
 
 ## Design
 The design of the cards is used with print statements using | and - to for the bases of a card whilst calling f prints to print the value of said card.
@@ -46,6 +74,7 @@ wants to hit, if so then we extend the hand essentially by adding another card.
 After this we do our ace alteration, by essentially saying if score is over 21 we assign it the value of 1 else it is a 11.
 Once the score hit's 21 we reveal the cards of both players. We also later down the line figure out if the dealer or player has 21. 
 
+
 ### the game 
 In here is where we essentially put in the rules. What it takes to bust what it takes to win which is having a higher score but not over 21.
 I also put in a way if the dealer has under 17 the dealer should hit as it is highly unlikely it will bust making the game a bit more competitve.
@@ -59,8 +88,14 @@ This is a very basic run through of the functions and classes but gives you some
 ## Future Features
 I would like to add currency (not real) to make it feel like your gambling for more immersion in this game. I also would like to do a couple of turns in this project,  
 that would allow the player to get a couple of rounds in and fully enjoy this project.
+
+
 ## Technologies used
-[python3]<https://en.wikipedia.org/wiki/Python_(programming_language)>
+### Languages used
+[python3](https://en.wikipedia.org/wiki/Python_(programming_language) This was only a python3 project.
+
+### apps and platforms
+[Heroku](https://www.heroku.com)
 ## Testing
 The majority of the testing is done through the terminal in VS code and gitpod.
 There were a few bugs with previous itterations of this project which you will find within the comments made, using things such as classes and __init__ 
