@@ -28,6 +28,10 @@ For my Python project I decided to go with a very simple version of black Jack g
 
 
 ## Project Goals
+The goal of this project is to create a BlackJack game that is easy to use.
+to take a gamble input
+to have readable cards
+a easy to follow score system
 
 
 ## User Goals
@@ -95,7 +99,11 @@ that would allow the player to get a couple of rounds in and fully enjoy this pr
 [python3](https://en.wikipedia.org/wiki/Python_(programming_language) This was only a python3 project.
 
 ### apps and platforms
-[Heroku](https://www.heroku.com)
+[Heroku](https://www.heroku.com) this is used to deploy the app for free
+[Gitpod](https://gitpod.com/) this is where all the code was written
+[Github](https://github.com/) This is where all of my project repos exist and are hosted.
+[Git](https://git-scm.com/)  This is a control system that allows me to push commits and changes to github/gitpod
+ 
 ## Testing
 The majority of the testing is done through the terminal in VS code and gitpod.
 There were a few bugs with previous itterations of this project which you will find within the comments made, using things such as classes and __init__ 
