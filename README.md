@@ -249,4 +249,8 @@ This application has been deployed from Github using Heroku:
 8. Enter your repository name and click on it when it shows below
 9. Choose the branch you want to buid your app from
 10.click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+    
+    
+### acknowledgements
+    This project is based on a Code Institute 
  
