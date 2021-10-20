@@ -187,7 +187,7 @@ I just want a easy to follow game with minimal instructions. Which has been achi
 ## Technologies used
 
 ### Languages used
-[python3](https://en.wikipedia.org/wiki/Python_(programming_language) This was only a python3 project.
+[python3](https://www.python.org/) This was only a python3 project.
 
 ### apps and platforms
 [Heroku](https://www.heroku.com) this is used to deploy the app for free
@@ -196,13 +196,23 @@ I just want a easy to follow game with minimal instructions. Which has been achi
 [Git](https://git-scm.com/)  This is a control system that allows me to push commits and changes to github/gitpod
  
 ## Testing
-The majority of the testing is done through the terminal in VS code and gitpod.
-There were a few bugs with previous itterations of this project which you will find within the comments made, using things such as classes and __init__ 
-as an example. But I ran into a lot of errors that I didn't know how to fix so I reverted back to a very basic version. 
-My naming convetions could of been cleaner there are some basic issues like naming functions very similarly for example price and cost are too similiar.
-Which actually caused the project to not work for a day or two because I couldn't understand the errors that were occuring.
-When graded it was apparent that there was no error handling so now there is a error message that will display if Hit or Hold isn't entered.
-This is to remind you of what is required in order to procceed with the game.
+- The majority of the testing is done through the terminal in VS code and gitpod.
+- My naming convetions could of been cleaner there are some basic issues like naming functions very similarly for example price and cost are too similiar.
+- this caused the project to not work for a day or two because I couldn't understand the errors that were occuring.
+- Originally there was almost no error testing in this project which has now been fixed.
+
+### Bugs
+I did try and create a way of playing a new round. To make the chips more useable. So that they would carry over in between rounds.
+All though successful in this portion of the project update I was unable to stop the cards from accumulating.
+I needed to impliment a soft reset on the score tracker but in doing so reset the chips counter back to 100.
+So what happened is the score would climb but the game logic would still work, but the score wouldn't  reset.
+There is no fix for this as of yet.
+
+<summary>Click here to view the icard accumilation bug</summary>
+
+![Screenshot of card accumilation bug](images/cardaccabug.png)
+
+</details>
 
 
 ## Deployment 
@@ -214,4 +224,19 @@ This is to remind you of what is required in order to procceed with the game.
  5. Under the 'Source' click on the dropdown and select 'master branch' 
  6. The page will reload and you'll see the link of your published page displayed under 'GitHub' pages. 
  7. It takes a few minutes for the site to be published, wait until the background of your link changes to a green color before trying to open it.
+
+### Heroku
+
+This application has been deployed from Github using Heroku:
+
+1. Create an account at [heroku.com](https://.heroku.com/)
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars, add your sensitive data
+6. For this project, I set buildpacks to <Python> and <NodeJS> in that order.
+7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+8. Enter your repository name and click on it when it shows below
+9. Choose the branch you want to buid your app from
+10.click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
  
