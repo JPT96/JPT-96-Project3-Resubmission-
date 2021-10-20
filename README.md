@@ -96,8 +96,12 @@ The design of the cards is used with print statements using | and - to for the b
 ### Function Purposes 
 In this sub section I would like to go over my functions and give a breif run down of what they do and the objective that they achieve.
 This will show my thought process and even help others that wish to do a similar project.
+
+
 ## Import
 So first thing you need to do is import random. This is very important because you need the deck to be shuffled and distributed randomly this allows for a fair game.
+
+
 ## Functions & Classes
 ### card
 This first function is called card.
@@ -132,11 +136,17 @@ I then iniate the game by going b = the_game b.round() which is a function defin
 
 This is a very basic run through of the functions and classes but gives you some idea of my thought process and approach towards this project.
 
+### Chips 
+
+This class has been created in order to create a currency within the game. This allows for a more immersive experience within the game.
+within the __init__ the main value is defined at 100 so that the player always starts at 100 chips. It then has a bet portion which is set at zero.
+This is then defined in the take_bet function. But other than that it simply adds the bet to the player chips or removes the player chips.
+
+### Take_bet
 
 
 ## Future Features
-I would like to add currency (not real) to make it feel like your gambling for more immersion in this game. I also would like to do a couple of turns in this project,  
-that would allow the player to get a couple of rounds in and fully enjoy this project.
+I would like to do a couple of turns in this project  that would allow the player to get a couple of rounds in and fully enjoy this project.
 
 
 ## Technologies used
