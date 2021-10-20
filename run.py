@@ -9,7 +9,6 @@ class card:
                        '7', '8', '9', '10', 'J', 'Q', 'K'][value-1]
         self.suit = '♥♦♣♠' [suit]
     
-
     def show(self):
         print('┌───────┐')
         print(f'| {self.value:<2}    |')
@@ -83,7 +82,6 @@ class player_dealer:
            
         return self.score
         
-    
     def show(self):
         if self.dealer:
             print("Dealers Cards")
@@ -95,9 +93,6 @@ class player_dealer:
         print("Score: " + str(self.score))
 
     
-       
-
-
 class the_game:
     def __init__(self):
         self.deck = Deck()
@@ -114,7 +109,6 @@ class the_game:
         self.round_count += 1
         take_bet(player_chips)
         self.player.show()
-        
         
         if p_status == 1:
             print("Player got Blackjack! Congrats!")
@@ -203,60 +197,4 @@ b = the_game()
 
 player_chips = Chips()
 b.round()
-
-
-    
-
 print("Thank you for playing don't be a stranger now.")
-    
-
-
-
-
-
-
-                    
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
